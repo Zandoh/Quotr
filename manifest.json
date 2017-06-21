@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "Quotr",
+  "version": "0.1.0",
+  "description": "A plain text description",
+  "icons": {
+
+  },
+  "author": "Zachary Clark",
+  "chrome_url_overrides" : {
+    "newtab": "quotr.html"
+  }
+}
