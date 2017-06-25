@@ -1,0 +1,39 @@
+{
+    "themes": [
+        {   
+            "name": "Yellow",
+            "value": "#FDEB71",
+            "pair": "#F8D800"
+        },
+        {
+            "name": "Blue",
+            "value": "#ABDCFF",
+            "pair": "#0396FF"
+        },
+        {
+            "name": "Mint",
+            "value": "#90F7EC",
+            "pair": "#32CCBC"
+        },
+        {
+            "name": "Purple and Blue",
+            "value": "#43CBFF",
+            "pair":  "#9708CC"
+        },
+        {
+            "name": "Blue and Purple",
+            "value": "#5EFCE8",
+            "pair": "#736EFE"
+        },
+        {
+            "name": "Green and Blue",
+            "value": "#92FFC0",
+            "pair": "#002661"
+        },
+        {
+            "name": "Orange and Blue",
+            "value": "#FFD26F",
+            "pair": "#3677FF"
+        }
+    ]
+}

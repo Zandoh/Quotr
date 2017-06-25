@@ -1,19 +1,41 @@
 <!DOCTYPE html>
 <html> 
     <head>
-        <title>Quotr</title>
-        <script src="./js/jquery-3.2.1.min.js"></script>
-        <script src="./js/quotr.js"></script>
+        <title>New Tab - Quotr</title>
         <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./css/bootstrap-toggle.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300">
         <link rel="stylesheet" href="./css/styles.css">
     </head>
     <body>
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-6 center">
-                    <p class="quote center-block">"Success is going from failure to failure without losing your enthusiasm." -- Winston Churchill</p>
+            <i class="fa fa-cog fa-lg settings-cog theme-item" aria-hidden="true"></i>
+            <div class="row vertical-center">
+                <div class="col-md-12">
+                    <div class="block">
+                        <i class="fa fa-quote-left fa-lg quote-left theme-item" aria-hidden="true"></i>
+                    </div>
+                    <div class="block">
+                        <p class="quote center-block theme-item"></p>
+                    </div>
+                    <div class="block">
+                        <i class="fa fa-quote-right fa-lg quote-right theme-item" aria-hidden="true"></i>
+                    </div>
                 </div>
+            </div>
+            <p class="createdBy center-block theme-item">Created by: <a href="http://zrclark.com" target="_blank">Zachary Clark</a></p>
+            <div class="settings-menu">
+                <div class="settings-close menu-attributes">&times;</div>
+                <div class="menu-attributes" href="#">Theme</div>
+                <div class="menu-attributes" href="#"><input type="checkbox" id="theme" checked data-toggle="toggle" data-on="Dark" data-off="Light" data-onstyle="info" data-offstyle="warning"></div>
+                <div class="menu-attributes" href="#">Background</div>
+                <div class="menu-attributes" href="#"><select id="background-select"></select></div>
+                <div class="menu-attributes settings-save" href="#"><button id="submit" type="button" class="btn btn-success">Save Settings</button></div>
             </div>
         </div>
     </body>
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/bootstrap-toggle.min.js"></script>
+    <script src="./js/quotr.js"></script>
 </html>
