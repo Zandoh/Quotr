@@ -47,10 +47,14 @@ $(function() {
         });
     } //getQuote()
 
+    //sets the width of the navigation menu, used to "open" and "close" the side menu
     function setWidth(el, width) {
         el.css('width', width)
     }//setWidth()
 
+    //if data is set upon "save settings" button click then
+    //data is grabbed from the toggle button (theme) and select option (backgroundColor)
+    //stored in localStorage, closes the navigation, then the page is reloaded to reflect those changes
     function saveSettings() {
         if($("#theme").is(':checked')) {
             localStorage.setItem('theme', 'dark');
@@ -67,10 +71,13 @@ $(function() {
         location.reload();
     }//saveSettings()
 
+    //initializes the bootstrapToggle button for the light/dark selector
     function toggleInit() {
         $('#theme').bootstrapToggle();
     }//toggleInit()
 
+    //pull data for available CSS gradients in the themes.json file
+    //gradients made possible by: https://webkul.github.io/coolhue/
     function loadThemes(){
         var themes = $.ajax({
             url: "./js/themes.json",
@@ -91,6 +98,8 @@ $(function() {
         })
     }//loadThemes()
 
+    //checks the browsers localStorage for variables backgroundColor and theme
+    //granted they exists sets them as their respective values. Used as a "settings" functionality
     function checkLocalstorage() {
         if(localStorage.theme !== null) {
             switch(localStorage.theme) {
@@ -112,6 +121,5 @@ $(function() {
         if(localStorage.backgroundColor !== null) {
             $('div.container-fluid').css("background-image", localStorage.backgroundColor);
         }//if background
-        
     }//checkLocalstorage()
 });
