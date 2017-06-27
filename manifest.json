@@ -2,9 +2,11 @@
   "manifest_version": 2,
   "name": "Quotr",
   "version": "0.1.0",
-  "description": "A plain text description",
+  "description": "Replace new tab page with a quote",
   "icons": {
-
+    "16": "./img/16.png",
+    "48": "./img/48.png",
+    "128": "./img/128.png"
   },
   "author": "Zachary Clark",
   "chrome_url_overrides" : {
